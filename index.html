@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="id" class="p-3">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toni's Page</title>
+    <link rel="icon" type="image/x-icon" href="img/logo toni.png">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="container-fluid text-center p-5" id="header">
+        <div class="row">
+            <div class="col align-self-center">
+                <h1 class="fw-medium"><b>SELAMAT DATANG DI WEBSITE SAYA!</b></h1>
+                <h6 class="fw-light">Anda dapat melihat karya random yang telah saya buat di sini<br>#IAm13</h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB DAN CONTENT -->
+    <div class="container-fluid py-3" id="content">
+        <div class="row">
+            <div class="col-md-1 text-center fs-4 " id="tab">
+                <nav class="nav flex-column">
+                    <a class="nav-link active tablinks p-4 my-1 align-items-center" onclick="viewContent(event, 'Home')" id="defaultOpen"><ion-icon name="home-outline"></ion-icon></a>
+                    <a class="nav-link tablinks p-4 my-1 align-items-center" onclick="viewContent(event, 'Novel')"><ion-icon name="book-outline"></ion-icon></a>
+                    <a class="nav-link tablinks p-4 my-1 align-items-center" onclick="viewContent(event, 'Music')"><ion-icon name="musical-notes-outline"></ion-icon></a>
+                    <a class="nav-link tablinks p-4 my-1 align-items-center" onclick="viewContent(event, 'Shop')"><ion-icon name="pricetag-outline"></ion-icon></a>
+                </nav>
+            </div>
+            <div class="col-md-11 p-5 my-1 " id="isi">
+                <div id="Home" class="tabcontent">
+                    <h3><b>Halo!</b></h3>
+                    <p>Terima kasih telah berkunjung ke situs pribadi saya! Dan... yea, ini gak bisa dibilang situs portfolio sih. Jadi, saya juga gak akan taruh skill, pendidikan, dan pengalaman pekerjaan di sini.</p>
+                    <p>Yang mau saya sajikan di sini adalah cuma siapa saya dengan hobi saya, itu aja sih. Selain itu, ini juga jadi bahan waktu luang saya, bisa aja website ini update informasi... atau ketambahan widget kalau saya niat.</p>
+                    <p>Hobi saya antara lain bikin proyek musik solo, menulis cerita, dan desain-desain grafis secara random.</p>
+                    <p>Sebenernya saya bingung ini beranda kalo bukan buat portfolio isinya apa aja. Untuk saat ini, saat ini ditulis, saya gak kepikiran berandanya mau diisi apa. Makasih banget untuk Anda yang udah keliling website pribadi saya ini.</p>
+                    <hr>
+
+                    <h3><b>Tentang</b></h3>
+                    <p>&lt;p&gt;Apa ya?&lt;/p&gt;</p>
+                    <p>&lt;p&gt;Oh, Anda dapat...&lt;/p&gt;</p>
+                    <p>Loh kok gitu, wait...</p>
+                    <p>Oke ulang</p>
+                    <p>Apa ya?</p>
+                    <p>Oh, Anda dapat berkunjung ke platform tempat saya membagikan berbagai desain grafis yang saya buat serta membaca novel-novel saya yang masih dengan versi aslinya.</p>
+                    <div class="row">
+                        <div class="col-md-2 text-center m-1 py-2 link-music"><a href="https://id.pinterest.com/toni_ramadhan_p/">Pinterest</a></div>
+                        <div class="col-md-2 text-center m-1 py-2 link-music"><a href="https://www.wattpad.com/user/mathreony">Wattpad</a></div>
+                    </div>
+
+                    <br>
+                    <p>Dan... kalian juga boleh silaturahmi ke akun Instagram saya <a href="https://www.instagram.com/toni_ramadhan_p/?hl=id"><b>di sini!</b></a></p>
+                </div>
+                  
+                <div id="Novel" class="tabcontent">
+                    <h3><b>Novel</b></h3>
+                    <p>Terkadang, saya punya waktu luang untuk menulis cerita dan hal ini dimulai sejak saya duduk di kelas XI. Ketertarikan ini juga dibangun oleh guru Bahasa Indonesia yang kala itu mengajar dan menyuarakan budaya literasi, walaupun memang bukan literasi non-fiksi. Dari beberapa novel yang saya baca, saya jadi pengen juga menulis rentetan cerita yang muncul di kepala saya. Saya memulainya di platform oranye bernama Wattpad dengan nama pena <b>Mathreony,</b> hingga pada akhirnya saya mencoba menerbitkan satu per satu cerita saya dengan nama asli saya.</p> 
+
+                    <!-- MOVE -->
+                    <div id="move">
+                        <div class="row">
+                            <div class="col-md-2 m-1 py-2"><img src="img/novel/move.jpg" alt="Move by Toni Ramadhan Prasetyo"></div>
+                            <div class="col-md-8 m-1 py-2">
+                                <h4>Move</h4>                                
+                                <p>Travelling itu keinginan setiap orang dengan banyak tujuan. Modalnya juga gak sedikit, tapi terbayar juga dengan keseruannya.</p>
+                                <p>Ini adalah cerita tentang Riko. Dia cuma mahasiswa biasa, tapi tidak dengan ceritanya. Dia punya sebuah cerita unik saat berpetualang sendirian di Jogja. Hari-harinya selama travelling itu banyak berubah sejak dia diikuti oleh seseorang yang gak dia kenal sebelumnya. Banyak lika-liku gak terduga yang dia lewati saat orang itu bergabung dalam perjalanannya.</p>
+                                <p>Kalo udah mulai penasaran, Riko udah cerita semuanya panjang lebar kok. Riko akan membawamu masuk ke dalam dunianya dan merasakan semua yang terjadi, let's go!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- THE VANISHED SMILE -->
+                    <div id="tvs">
+                        <div class="row">
+                            <div class="col-md-2 m-1 py-2"><img src="img/novel/tvs.jpeg" alt="The Vanished Smile by Toni Ramadhan Prasetyo"></div>
+                            <div class="col-md-8 m-1 py-2">
+                                <h4>The Vanished Smile</h4>                                
+                                <p>Banyak yang bilang kalau masa SMA merupakan masa yang paling indah selama kita menempuh masa remaja. Sebagian besar orang setuju dengan pernyataan itu, tentunya dengan berbagai alasan. Ada yang indah karena persahabatannya, ada yang karena kisah cintanya, ada pula yang beralasan keduanya.</p>
+                                <p>Tak terkecuali Damar, siswa SMA Mandiri yang sifatnya tidak berbeda jauh dengan remaja pada umumnya. Tapi, soal kisah cinta, Damar memiliki lika-liku yang sedikit berbeda dari kebanyakan remaja. Masa SMA-nya juga diselimutin persahabatan yang indah.</p>
+                                <p>Sebagai laki-laki di usia remaja yang masih labil, Damar juga melewati masa di mana dirinya kehilangan kemampuan untuk merasakan keceriaan. Hilangnya kebahagiaan itu dipicu oleh perjalanan hatinya yang terus menghadapi orang yang salah. Sebagai manusia biasa, tentu saja Damar tidak dapat memprediksi siapa yang akan berhasil mengembalikan senyumnya, kembali seperti Damar yang selama ini dikenal oleh teman-temannya.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                  
+                <div id="Music" class="tabcontent">
+
+                    <h3><b>Karya Musik</b></h3>
+                    <p>Saya memiliki beberapa karya musik dengan nama <b>Toni Rams</b> yang dapat Anda dengarkan di berbagai platform musik favorit kalian.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0NO4A1y4B8vIdHWtRv5N5q?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <br>
+                    <br>
+                    
+                    <div class="row">
+                        <div class="col-md-2 text-center m-1 py-2 link-music"><a href="https://open.spotify.com/artist/0NO4A1y4B8vIdHWtRv5N5q?si=XJ1O24TgT0eaiqGSQY91AA">Spotify</a></div>
+                        <div class="col-md-2 text-center m-1 py-2 link-music"><a href="https://music.apple.com/us/artist/toni-rams/1553491027">Apple Music</a></div>
+                        <div class="col-md-2 text-center m-1 py-2 link-music"><a href="https://www.amazon.com/music/player/artists/B08WRM1WX1/toni-rams">Amazon Music</a></div>
+                        <div class="col-md-2 text-center m-1 py-2 link-music"><a href="https://www.deezer.com/us/artist/123729652">Deezer</a></div>
+                    </div>
+                    
+                    <br>
+
+                    <!-- DISKOGRAFI -->
+                    <div id="diskografi">
+                        <h3><b>Diskografi</b></h3>
+                        <p>Diskografi di bawah ini saya masukkan berdasarkan karya yang udah dirilis di platform musik secara resmi (terutama Spotify) ya guys. Selamat membaca.</p>
+
+                        <!-- ALBUM 01 -->
+                        <div id="album1">
+                            <div class="row">
+                                <div class="col-md-2 m-1 py-2"><img src="img/music/EP01.jpg" alt="Isolated Dreams EP by Toni Rams"></div>
+                                <div class="col-md-8 m-1 py-2">
+                                    <h4>Isolated Dreams</h4>
+                                    <p><b>Tanggal Rilis </b>15 Maret 2022 <br> <b>Durasi </b>13:41 <br> <b>Kategori </b>EP</p>
+                                    <p>Karya ini merupakan karya yang sebenarnya udah dibuat sejak tahun 2020, dan baru dirilis resmi 2 tahun kemudian. Nama album ini merepresentasikan mimpi saya untuk merilis lagu namun terhalang oleh pandemi pada tahun tersebut. Selain itu, tadinya album ini berisi 10 lagu saat saya buat, tapi saya cut jadi 5 aja. Oh iya, album ini adalah album instrumental karena saya gak tau mau diisi apa.</p>
+
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Judul Lagu</th>
+                                            <th scope="col">Durasi</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>The Plague</td>
+                                            <td>1:28</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Dreamer</td>
+                                            <td>2:47</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td>At the End of the Party</td>
+                                            <td>3:30</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">4</th>
+                                            <td>Ancient Night (Dreamer 2)</td>
+                                            <td>2:41</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">5</th>
+                                            <td>Ghost Existence (Behind You)</td>
+                                            <td>3:15</td>
+                                          </tr>
+                                          <tr>
+                                            <th colspan="2">Total</th>
+                                            <td ><b>13:41</b> </td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- SINGLE 01 -->
+                        <div id="single1">
+                            <div class="row">
+                                <div class="col-md-2 m-1 py-2"><img src="img/music/Single01.jpg" alt="Black Circle by Toni Rams"></div>
+                                <div class="col-md-8 m-1 py-2">
+                                    <h4>Black Circle</h4>
+                                    <p><b>Tanggal Rilis </b>5 Mei 2022 <br> <b>Durasi </b>3:11 <br> <b>Kategori </b>Single</p>
+                                    <p>Karya ini adalah hasil remake tahun 2020 (yang bentuknya tadinya masih mentahan). Saat di-remake, saya memutuskan untuk kolaborasi dengan M. Mushab, gitaris Bliss Remains (ex-band saya), untuk mengisi trek gitar di salah satu lagu favorit saya ini. Lagu ini menggambarkan keresahan saya ketika menemukan berita-berita konflik yang dibarengi pandemi di usia yang semakin dewasa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- ALBUM 02 -->
+                        <div id="album2">
+                            <div class="row">
+                                <div class="col-md-2 m-1 py-2"><img src="img/music/EP02.jpg" alt="Hetero EP by Toni Rams"></div>
+                                <div class="col-md-8 m-1 py-2">
+                                    <h4>Hetero</h4>
+                                    <p><b>Tanggal Rilis </b>6 Mei 2022 <br> <b>Durasi </b>24:09 <br> <b>Kategori </b>EP</p>
+                                    <p>Sebagian trek di album ini merupakan hasil remake dari karya yang saya buat 1 tahun sebelumnya, 2021. Lagu baru yang ditambahkan adalah <b>The One and Evil, Star,</b> dan <b>Resurrection Anthem.</b> Sementara itu, <b>Isolated</b> dan <b>Crown Virus</b> dulunya saya buat bareng dengan album <b>Isolated Dreams</b> tapi dipikir-pikir kurang cocok. Nama album ini merepresentasikan suasana lagu yang temanya beda-beda di dalamnya.</p>
+
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Judul Lagu</th>
+                                            <th scope="col">Durasi</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>The One and Evil</td>
+                                            <td>4:35</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Dead Bride</td>
+                                            <td>3:08</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td>Black Circle (ft. M. Mushab)</td>
+                                            <td>3:11</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">4</th>
+                                            <td>Star</td>
+                                            <td>4:33</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">5</th>
+                                            <td>Resurrection Anthem</td>
+                                            <td>4:41</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">6</th>
+                                            <td>Isolated</td>
+                                            <td>1:28</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">7</th>
+                                            <td>Crown Virus</td>
+                                            <td>2:33</td>
+                                          </tr>
+                                          <tr>
+                                            <th colspan="2">Total</th>
+                                            <td ><b>24:09</b> </td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- SINGLE 02 -->
+                        <div id="single2">
+                            <div class="row">
+                                <div class="col-md-2 m-1 py-2"><img src="img/music/Single02.png" alt="Kill Me If You Want by Toni Rams"></div>
+                                <div class="col-md-8 m-1 py-2">
+                                    <h4>Kill Me If You Want</h4>
+                                    <p><b>Tanggal Rilis </b>25 November 2022 <br> <b>Durasi </b>7:07 <br> <b>Kategori </b>Single</p>
+                                    <p>Lagu ini mengisahkan seseorang yang merasa dirinya dijauhi oleh temannya karena masa lalu antara keduanya yang bikin si temannya ini agak jaga jarak, sementara orang tersebut merasa hal itu udah gak perlu/berlebihan karena semua udah berlalu.</p>
+
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Judul Lagu</th>
+                                            <th scope="col">Durasi</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Kill Me If You Want</td>
+                                            <td>3:33</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Kill Me If You Want (Instrumental)</td>
+                                            <td>3:33</td>
+                                          </tr>                                      
+                                            <th colspan="2">Total</th>
+                                            <td ><b>7:07</b> </td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- SINGLE 03 -->
+                        <div id="single3">
+                            <div class="row">
+                                <div class="col-md-2 m-1 py-2"><img src="img/music/Single03.png" alt="Chaos by Toni Rams"></div>
+                                <div class="col-md-8 m-1 py-2">
+                                    <h4>Chaos</h4>
+                                    <p><b>Tanggal Rilis </b>13 Desember 2022 <br> <b>Durasi </b>2:49 <br> <b>Kategori </b>Single</p>
+                                    <p>Karya ini berisi kritikan terhadap hubungan yang "sudah tahu toxic tapi masih dipertahanin" atau "kelakuan cowok/ceweknya udah kepalang jelek masih aja gak rela ditinggal".</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- ALBUM 03 -->
+                        <div id="album3">
+                            <div class="row">
+                                <div class="col-md-2 m-1 py-2"><img src="img/music/LP01.png" alt="Love and Hate Algorithm by Toni Rams"></div>
+                                <div class="col-md-8 m-1 py-2">
+                                    <h4>Love and Hate Algorithm</h4>
+                                    <p><b>Tanggal Rilis </b>23 Januari 2023 <br> <b>Durasi </b>35:37 <br> <b>Kategori </b>LP</p>
+                                    <p>Sebagian besar trek di album ini juga merupakan hasil remake dari karya yang saya buat pada tahun 2020 dan 2021. Lagu baru yang ditambahkan adalah <b>Round 2, Star Pt. 0 (Look In the Mirror),</b> dan <b>Spores.</b> Sementara itu, single-single sebelumnya juga saya masukkan, yaitu <b>Kill Me If You Want</b> dan <b>Chaos.</b> Nama album yang saya tetapkan adalah cerminan bahwa setiap orang punya caranya sendiri untuk merasakan cinta dan benci, dan album ini berisi tentang perasaan tersebut.</p>
+
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Judul Lagu</th>
+                                            <th scope="col">Durasi</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Welcome To My Creation</td>
+                                            <td>1:00</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Oneself</td>
+                                            <td>3:05</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td>Kill Me If You Want</td>
+                                            <td>3:33</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">4</th>
+                                            <td>Round 2</td>
+                                            <td>3:52</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">5</th>
+                                            <td>Hatred</td>
+                                            <td>2:31</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">6</th>
+                                            <td>Chaos</td>
+                                            <td>2:48</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">7</th>
+                                            <td>Begod</td>
+                                            <td>4:02</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">8</th>
+                                            <td>Star, Pt. 0 (Look In the Mirror)</td>
+                                            <td>2:26</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">9</th>
+                                            <td>Fallen</td>
+                                            <td>2:51</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">10</th>
+                                            <td>The Nameless Tombstone</td>
+                                            <td>3:56</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">11</th>
+                                            <td>Spores</td>
+                                            <td>5:33</td>
+                                          </tr>
+                                          <tr>
+                                            <th colspan="2">Total</th>
+                                            <td ><b>35:37</b> </td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- SINGLE 04 -->
+                        <div id="single4">
+                            <div class="row">
+                                <div class="col-md-2 m-1 py-2"><img src="img/music/Single04.png" alt="Money Is Everything by Toni Rams"></div>
+                                <div class="col-md-8 m-1 py-2">
+                                    <h4>Money Is Everything</h4>
+                                    <p><b>Tanggal Rilis </b>20 Maret 2023 <br> <b>Durasi </b>7:56 <br> <b>Kategori </b>Single</p>
+                                    <p>Lagu ini saya buat untuk (plis tukang bakso jangan tangkap saya) para petinggi yang bisa melakukan apa aja karena uang. Gambar album saya buat seperti di samping ini karena cocoklogi dengan singkatan judul lagunya, M.I.E.</p>
+
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Judul Lagu</th>
+                                            <th scope="col">Durasi</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Money Is Everything</td>
+                                            <td>3:58</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Money Is Everything (Instrumental)</td>
+                                            <td>3:58</td>
+                                          </tr>                                      
+                                            <th colspan="2">Total</th>
+                                            <td ><b>7:56</b> </td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+
+                </div>
+
+                <div id="Shop" class="tabcontent">
+                    <h3><b>Toko</b></h3>
+                    <p>Pertama-tama, tentu saja saya ingin menunjukkan di mana saya menjual novel yang saya terbitkan.</p>
+                    <p>Yaps, benar! <a href="https://www.megalitera.co.id/?s=toni+ramadhan+p"><b>Di sini!</b></a></p>
+                    <p>Selain itu, saya juga memanfaatkan hobi desain grafis saya ke dalam cetakan baju dan souvenir di sebuah platform. Ya, tokonya saya beri nama <b>Rams Shop</b>. Barangkali Anda berminat untuk membelinya atau sekadar melihat-lihat, mari klik <a href="https://www.ciptaloka.com/+rams-shop/"><b>di sini!</b> </a></p>
+                    <p>Sekalian siapa tahu Anda ingin punya baju kustom, InsyaAllah saya bisa desain, selagi itu bukan digital painting karena ranah desain saya tidak kesana.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container-fluid text-center p-5" id="footer">
+        <div class="row">
+            <div class="col align-self-center">
+                <h6 class="fw-light">&copy;2023 Toni Ramadhan Prasetyo</h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- MY JS -->
+    <script src="js/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+<!-- 
+BELUM MENGUASAI FRAMEWORK LAIN!
+BELUM FOKUS WEBSITE
+SEMENTARA INI MASIH BERMAIN DENGAN BOOTSTRAP 
+HANYA MENJALANKAN HOBI
+WEBSITE BY TONI RAMADHAN PRASETYO
+-->
